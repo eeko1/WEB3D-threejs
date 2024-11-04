@@ -107,7 +107,7 @@ function loadmodels() {
 
       const loader = new GLTFLoader().setPath("");
 
-      loader.load("salomon/salomon.gltf", async function (gltf) {
+      loader.load("salomon/Salmon_white_shoe.gltf", async function (gltf) {
         const model = gltf.scene;
         await renderer.compileAsync(model, camera, scene);
         scene.add(model);
@@ -135,7 +135,6 @@ function loadmodels() {
         model.position.set(0, 0, 4);
       });
 
-      // Additional model
       loader.load("torus/torus.gltf", async function (gltf) {
         const model = gltf.scene;
         await renderer.compileAsync(model, camera, scene);
